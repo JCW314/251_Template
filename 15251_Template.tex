@@ -18,11 +18,16 @@
 \newcommand{\str}[1]{\texttt{\textbf{#1}}}
 \newcommand{\empStr}{{\ifmmode \mathbf{\epsilon} \else $\mathbf{\epsilon}$ \fi}}
 \newcommand{\cat}{{\ifmmode \cdot \else $\cdot$\fi}}
-\newcommand{\starOp}{{\ifmmode ^* \else $\vphantom{1}^*$ \fi}}
+\newcommand{\starOp}{{\ifmmode \vphantom{1}^* \else $\vphantom{1}^*$ \fi}}
+\newcommand{\rev}{{\ifmmode \vphantom{1}^R \else $\vphantom{1}^R$ \fi}}
 \newcommand{\albet}{{\ifmmode \Sigma \else $\Sigma$\fi}}
 \newcommand{\alphlist}[1]{\{\str{#1}\}}
 \newcommand{\union}{{\ifmmode \cup \else$\cup$ \fi}}
 \newcommand{\intersect}{{{\ifmmode \cap \else$\cap$ \fi}}}
+\DeclareMathOperator{\enc_helper}{Enc}
+\newcommand{\Enc}{{\ifmmode \enc_helper \else$\enc_helper$ \fi}}
+\newcommand{\gap}{\vspace{10pt}\\}
+\newcommand{\biggap}{\vspace{20pt}\\}
 
 %-------------Basic Info-------------
 \newcommand{\pset}{7}%TODO Insert HW Number Here
@@ -31,7 +36,7 @@
 \begin{document}
 \maketitle
 
-\noindent \textbf{Example Usage:} \str{01} \str{abc}\cat\str{efg}\starOp \empStr \albet\starOp \alphlist{a,b,c} $L_1$ \union $L_2$ \intersect $L_3$
+\noindent \textbf{Example Usage:} \str{01} \str{abc}\cat\str{efg}\starOp \empStr \gap \albet\starOp \alphlist{a,b,c} $L_1$ \union $L_2$ \intersect $L_3$ \biggap \Enc
 
 
 \section*{CYU Problems}
